@@ -18,6 +18,9 @@ export default function ResultChannelCard({
   channelDescription: string;
   publishedAt: string;
 }) {
+  publishedAt = publishedAt
+    ? new Date(publishedAt).toLocaleDateString()
+    : 'unAvailable';
   return (
     <>
       <div
@@ -31,7 +34,7 @@ export default function ResultChannelCard({
           <span className="result-type rounded-pill">Channel</span>
           <div className="card h-100 shadow">
             <img
-              className="card-img-top"
+              className="card-img-top rounded-circle"
               src={channelThumbnailSrc}
               // width={100}
               alt={channelTitle}
@@ -43,7 +46,7 @@ export default function ResultChannelCard({
               <small>{channelTitle}</small>
               {publishedAt ? (
                 <p className="text-muted">
-                  <small>{publishedAt}</small>
+                  <small>Created on: ({publishedAt})</small>
                 </p>
               ) : null}
               <p className="card-text">{channelDescription}</p>
