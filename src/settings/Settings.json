@@ -1,0 +1,16 @@
+{
+  "general": {
+    "language": "en",
+    "font-size": "medium",
+    "theme": "light"
+  },
+  "videoCard": {
+    "showViews": true,
+    "showUploadDate": true,
+    "showChannelName": true,
+    "showDescription": true,
+    "showDuration": true,
+    "showThumpnail": true,
+    "showTitle": true
+  }
+}

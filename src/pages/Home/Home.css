@@ -1,0 +1,39 @@
+#searchBtn {
+}
+
+#clearResultsBtn {
+  width: 240px;
+}
+
+#searchResultType {
+  border-radius: 12px;
+  padding: 0;
+  font-size: 14px;
+  color: gray;
+}
+
+/* #searchQueryInput {
+  border-radius: 12px;
+} */
+
+/* #nextPageBtn {
+  transition:
+    0.2s background-color,
+    0.2s color;
+  }
+
+  #nextPageBtn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  #prevPageBtn {
+    transition:
+      0.2s background-color,
+      0.2s color;
+  }
+
+  #prevPageBtn:hover {
+    background-color: #000;
+    color: #fff;
+  } */

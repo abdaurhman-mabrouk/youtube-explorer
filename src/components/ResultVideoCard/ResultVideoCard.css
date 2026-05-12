@@ -1,0 +1,29 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.result-video-card {
+  width: 30%;
+  height: 400px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: -14px 14px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-video-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 0 0;
+}
+
+.result-type {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  background-color: #000;
+  opacity: 0.5;
+  color: #fff;
+}

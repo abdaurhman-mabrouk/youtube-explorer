@@ -1,0 +1,15 @@
+.result-card {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.result-type {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  padding: 2px 3px;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
