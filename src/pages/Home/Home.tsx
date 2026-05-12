@@ -27,7 +27,7 @@ const LoadingSpinner = lazy(
 const Logo = '/favicon.png';
 
 export default function Home() {
-  const [query, setQuery] = useState<string>('opilz');
+  const [query, setQuery] = useState<string>('');
   const [searchType, setSearchType] = useState<string>('video');
   const [nextPageToken, setNextPageToken] = useState<string | undefined>(
     undefined,
