@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type {
   SearchVideosByKeywordResponse,
   SearchChannelsByKeywordResponse,
@@ -177,3 +178,26 @@ export async function searchPlaylistsByKeyword(
     return error as YoutubeErrorResponse;
   }
 }
+
+export async function searchVideosByChannelId(
+  channelId: string,
+): Promise<SearchVideosByKeywordResponse | YoutubeErrorResponse> {
+  const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&channelId=${channelId}&maxResults=12&key=${API_KEY}`;
+
+  try {
+    const response = await fetch(url);
+    const json = await response.json();
+
+    if (!response.ok) {
+      return json as YoutubeErrorResponse;
+    }
+
+    console.log(json as SearchVideosByKeywordResponse);
+    return json as SearchVideosByKeywordResponse;
+  } catch (error) {
+    console.error(error);
+    return error as YoutubeErrorResponse;
+  }
+}
+
+export async function searchVideoById({ videoId }: { videoId: string }) {}
